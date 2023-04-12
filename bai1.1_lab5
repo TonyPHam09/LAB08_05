@@ -1,0 +1,36 @@
+package bai1_lab5;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class mangSoThuc {
+	private ArrayList<Double> list = new ArrayList<>();
+	
+	public void nhap() {
+		Scanner input = new Scanner(System.in);
+		while(true){
+			System.out.println("nhap n: ");
+			Double x = input.nextDouble();
+			list.add(x);
+			input.nextLine();
+			System.out.println("nhap them (Y/N): ");
+			if(input.nextLine().equals("N")){
+			break;
+			}
+			}
+	}
+	
+	public void hienThi() {
+		for(Double item : list) {
+			System.out.println(" "+item);
+		}
+	}
+	
+	public void tinhTong() {
+		double tong = 0;
+		for(Double item : list) {
+			tong += item;
+		}
+		System.out.println("Tong: " + tong);
+	}
+}
