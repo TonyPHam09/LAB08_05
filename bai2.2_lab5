@@ -1,0 +1,8 @@
+package bai2_lab5;
+
+public class main {
+	public static void main(String[] args) {
+		danhSach list = new danhSach();
+		list.menu();
+	}
+}
