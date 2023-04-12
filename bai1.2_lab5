@@ -1,0 +1,10 @@
+package bai1_lab5;
+
+public class main {
+	public static void main(String[] args) {
+		mangSoThuc st = new mangSoThuc();
+		st.nhap();
+		st.hienThi();
+		st.tinhTong();
+	}
+}
